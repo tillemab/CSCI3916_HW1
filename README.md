@@ -11,15 +11,15 @@
 ## Assignment Checklist
 
 - [x] **Step 1:** Creating an Echo Server
->    - [x] Navigate to the cloned repository on your GitHub Classroom repository.
->    - [x] Create a new file server.js.
->    - [x] Implement an Echo server using Node.js and Express.js. This server should respond with the same string it receives in a POST request.
+  > - [x] Navigate to the cloned repository on your GitHub Classroom repository.
+  > - [x] Create a new file server.js.
+  > - [x] Implement an Echo server using Node.js and Express.js. This server should respond with the same string it receives in a POST request.
 - [x] **Step 2:** Setting up Auto-Deployment on Render
->    - [x] Follow the steps in the Render guideLinks to an external site. to setup auto-deployment from your GitHub repository.
+  > - [x] Follow the steps in the Render guideLinks to an external site. to setup auto-deployment from your GitHub repository.
 - [x] **Step 3:** Creating a Postman Request
->    - [x] Open Postman and create a new POST request to your Render-deployed Echo server.
->    - [x] Create an environment variable echo_body for the body of your request.
->    - [x] In the ‘Tests’ tab, write tests to validate the response such as status code, response body, and response time.
+  > - [x] Open Postman and create a new POST request to your Render-deployed Echo server.
+  > - [x] Create an environment variable echo_body for the body of your request.
+  > - [x] In the ‘Tests’ tab, write tests to validate the response such as status code, response body, and response time.
 - [x] **Step 4:** Creating readme and Sharing CollectionLinks to an external site.
->    - [x] Create a readme.md file at the root of your GitHub repository.
->    - [x] Share your Postman collection and include it in your readme. Make sure to include your environment settings.
+  > - [x] Create a readme.md file at the root of your GitHub repository.
+  > - [x] Share your Postman collection and include it in your readme. Make sure to include your environment settings.
