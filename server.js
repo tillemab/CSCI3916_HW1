@@ -1,31 +1,29 @@
-// Pull in Express to Create API Server
+// Pull in Express to create API Server
 const express = require('express')
 const app = express();
 
-// Ability to Parse JSON Responses
+// Parse JSON in the Request Body
 app.use(express.json());
 
-app.post("/", (req, res) => {
+// Listen for POST Requests on the Root URL
+app.post("/", (request, response) => {
 
-    const acceptHeader = req.get('Accept');
+    // Copy the Accept Header of the Request to the Response if Applicable
+    const acceptHeader = request.get('Accept');
+    if (acceptHeader) response.setHeader('Accept', acceptHeader);
 
-    if (acceptHeader) {
-        res.setHeader('Accept', acceptHeader)
-    }
-
-    const responseBody = {
-        ...req.body
-    }
-
-    res.json(responseBody)
+    // Respond with everything in the request body
+    response.json({...request.body});
 
 });
 
-// Use port environment variable, else default to 3000
+// Use Port Environment Variable if set, else default to 3000
 const port = process.env.PORT || 3000;
 
-const server = app.listen(port, function(){
+// Create Express Server listening on port
+const server = app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
+// Export the server for testing
 module.exports = server;
